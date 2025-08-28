@@ -1,0 +1,107 @@
+<html>
+    <head>
+    <title>This is Justin Bieber's Fanpage</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          max-width: 600px;
+          margin: 40px auto;
+          background: #fff;
+          color: #222;
+          padding: 0 20px;
+        }
+        header {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+        header img {
+          max-width: 150px;
+          border-radius: 10px;
+        }
+        section {
+          margin-bottom: 25px;
+          padding: 15px;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          box-shadow: 1px 1px 8px #eee;
+        }
+        h2 {
+          margin-top: 0;
+          color: #333;
+        }
+        #gallery img {
+          width: 150px;
+          height: 150px;
+          object-fit: cover;
+          margin: 5px;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+        }
+        #gallery img:hover {
+          transform: scale(1.1);
+        }
+        button {
+          background: #007BFF;
+          border: none;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1em;
+          margin-top: 10px;
+          display: block;
+        }
+        button:hover {
+          background: #0056b3;
+        }
+      </style>
+      </head>
+
+
+    <body>
+    <header>
+        <h1>Justin Bieber</h1>
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FJustin_Bieber&psig=AOvVaw1ddfmeusnMEn4iKvU0lr2E&ust=1755842910190000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPimhdyem48DFQAAAAAdAAAAABAE" alt="Celebrity Photo">
+    </header>
+ 
+    <section id="bio">
+        <h2>About</h2>
+        <p>Known for his smooth vocals and catchy pop-R&B tunes, Biebers career skyrocketed with hits like 'Baby', 'Sorry', and 'Love Yourself'. Throughout his career, he has released multiple chart-topping albums, won numerous awards including a Grammy, and amassed millions of fans worldwide.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <img src="https://res.cloudinary.com/hits-photos-archive/image/upload/c_fit,w_3840,h_4950,g_center/f_auto/q_auto/v1/biebs_listening_oys9vb?_a=BAVAZGDW0" alt="Photo 1" />
+        <img src="http://images5.fanpop.com/image/photos/31400000/justin-bieber-2012-justin-bieber-31445651-2000-2304.jpg" alt="Photo 2" />
+        <img src="https://www.billboard.com/wp-content/uploads/2022/05/justin-bieber-apple-music-ebro-2022-billboard-1548.png" alt="Photo 3" />
+    </section>
+
+    <section id="news">
+        <h2>Latest News</h2>
+        <ul id="news-list"></ul>
+            <li>Justin Bieber just released a new single!</li>
+            <li>Upcoming world tour announced.</li>
+            <li>Interview published on major magazine.</li>
+        </ul>
+        <button id="toggle-news">Hide News</button>
+    </section>
+
+        
+    <script>
+        const toggleNewsBtn = document.getElementById('toggle-news');
+        const newsList = document.getElementById('news-list');
+    
+        toggleNewsBtn.addEventListener('click', () => {
+        if (newsList.style.display === 'none') {
+            newsList.style.display = 'block';
+            toggleNewsBtn.textContent = 'Hide News';
+        } else {
+            newsList.style.display = 'none';
+            toggleNewsBtn.textContent = 'Show News';
+        }
+        });
+    </script>
+
+    </body>
+</html>
